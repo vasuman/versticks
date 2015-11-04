@@ -15,15 +15,14 @@ function loop() {
 
 let game = {
     init: function() {
-        this._x = 3;
+        screen.init();
+        input.init(screen.can);
     },
     tick: function() {
         level.update();
     },
     start: function() {
         level = new Level(1);
-        screen.init();
-        input.init(screen.can);
         loop();
     },
     draw: function() {

@@ -6,6 +6,7 @@ export default class Level {
         this.number = number;
         let src = require('json!../levels/' + number + '.json');
         Object.assign(this, src);
+        screen.setLevelSize(this.size);
     }
 
     update() {
@@ -26,6 +27,7 @@ export default class Level {
 
     draw() {
         this.forEach(screen.drawTile.bind(screen));
+        screen.drawLevelOutline();
     }
 
 }

@@ -1,5 +1,4 @@
 {
-    "grid": [0],
-    "width": 1,
-    "height": 1
+    "grid": [0, 1, 0, 1],
+    "size": 2
 }
