@@ -1,0 +1,28 @@
+{
+  "name": "versticks",
+  "version": "1.0.0",
+  "description": "A game about vertices and sticks.",
+  "scripts": {
+    "test": "exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vasuman/versticks.git"
+  },
+  "keywords": [
+    "game"
+  ],
+  "author": "Vasuman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vasuman/versticks/issues"
+  },
+  "homepage": "https://github.com/vasuman/versticks#readme",
+  "devDependencies": {
+    "babel-loader": "^5.3.3",
+    "file-loader": "^0.8.4",
+    "image-webpack-loader": "^1.6.2",
+    "json-loader": "^0.5.3",
+    "webpack": "^1.12.2"
+  }
+}
