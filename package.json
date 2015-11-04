@@ -20,6 +20,7 @@
   "homepage": "https://github.com/vasuman/versticks#readme",
   "devDependencies": {
     "babel-loader": "^5.3.3",
+    "expose-loader": "^0.7.0",
     "file-loader": "^0.8.4",
     "image-webpack-loader": "^1.6.2",
     "json-loader": "^0.5.3",

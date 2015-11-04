@@ -1,18 +1,15 @@
 let input = {
     init: function(elem) {
-        this._listeners = [];
         this.elem = elem;
         this.elem.addEventListener('click', this._click.bind(this));
+        this._clicks = []
     },
-    listen: function(box, trigger) {
-        this._listeners.push({ box, trigger });
+    forClick: function(cb) {
+        this._clicks.forEach(cb);
+        this._clicks = [];
     },
     _click: function(ev) {
-        for (let listener of this._listeners) {
-            if (listener.box.traps(ev)) {
-                listener.trigger();
-            }
-        }
+        this._clicks.push(ev);
     }
 }
 

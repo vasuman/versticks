@@ -2,6 +2,9 @@ import game from './game.js';
 
 console.clear();
 
-game.init();
-
-window.onload = game.start.bind(game);
+window.onload = function() {
+    game.init();
+    game.start();
+    //debug
+    require('expose?game!./game.js');
+}
